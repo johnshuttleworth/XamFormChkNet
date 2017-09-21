@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+//using Plugin.Connectivity;
+//using Plugin.Connectivity.Abstractions;
 using Xamarin.Forms;
 
 namespace XamFormChkNet
@@ -13,12 +15,12 @@ namespace XamFormChkNet
         {
             InitializeComponent();
 
-            MainPage = new XamFormChkNet.MainPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+//            CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
         }
 
         protected override void OnSleep()
@@ -30,5 +32,14 @@ namespace XamFormChkNet
         {
             // Handle when your app resumes
         }
+
+        //void HandleConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        //{
+        //    Type currentPage = this.MainPage.GetType();
+        //    if (e.IsConnected && currentPage != typeof(MainPage))
+        //        MainPage = new MainPage();
+        //    else if (!e.IsConnected && currentPage != typeof(MainPage))
+        //        MainPage = new MainPage();
+        //}
     }
 }

@@ -4,8 +4,13 @@
              xmlns:local="clr-namespace:XamFormChkNet"
              x:Class="XamFormChkNet.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <!--<StackLayout>  -->
+    
+        <!--<Label Text="Xamarin Forms - Check Network Connectivity in UWP and Android " VerticalOptions="Center" HorizontalOptions="Center"/>  
+    
+            <Label Text="Connected Network is !....." TranslationX="0" TranslationY="100" VerticalOptions="Center" HorizontalOptions="Center"/>  
+    
+                <Label x:Name="ConNet" TranslationX="0" TranslationY="100" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"/>   -->
+    <!--</StackLayout>  -->
 
 </ContentPage>
